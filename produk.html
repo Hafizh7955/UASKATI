@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Katalog Layanan - INDOFIX Service Center</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      INDOFIX
+      <span class="tagline">Service Center</span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Layanan</a></li>
+        <li><a href="transaksi.html">Reservasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <h2 class="section-title">Katalog Layanan</h2>
+      <p>Pilih layanan lalu klik <b>Pesan Sekarang</b> untuk melihat detail dan melanjutkan ke reservasi.</p>
+
+      <div class="category-strip" id="filterKategori">
+        <button class="active" data-kategori="Semua">Semua</button>
+        <button data-kategori="Hardware">Hardware</button>
+        <button data-kategori="Upgrade">Upgrade</button>
+        <button data-kategori="Maintenance">Maintenance</button>
+        <button data-kategori="Software">Software</button>
+      </div>
+
+      <div class="grid-produk" id="gridProduk">
+        <!-- kartu produk dirender oleh js/produk.js -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    &copy; <span class="tahun-berjalan">2026</span> INDOFIX Service Center.
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/produk.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
